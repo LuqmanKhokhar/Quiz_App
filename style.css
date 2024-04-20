@@ -49,9 +49,12 @@ h2{
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover:not([disabled]){
   opacity: 0.5;
   background-color: aquamarine;
+}
+.btn:disabled{
+  cursor: no-drop;
 }
 
 .next-btn{
@@ -72,3 +75,9 @@ h2{
   background-color: black;
 }
 
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
+}
